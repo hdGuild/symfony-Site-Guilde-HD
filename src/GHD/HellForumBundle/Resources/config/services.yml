@@ -1,0 +1,4 @@
+services:
+#    ghd_hell_forum.example:
+#        class: GHD\HellForumBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

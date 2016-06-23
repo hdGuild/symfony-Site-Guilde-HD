@@ -1,0 +1,433 @@
+/* @JeunesPoussesBundle/Resources/public/css/JPProjets.css
+    
+    Feuille de styles du projet JeunesPousses
+    
+    Philippe Carpentier, le 09/07/2015
+*/
+/* Gestion de la police :
+    utilisation de taille de police relative (em) 
+html
+{
+    font-size:100%;
+}
+
+body
+{
+    font-size: 0.8em;
+}
+*/
+
+/* Eléments principaux de la page */
+
+#bloc_page
+{
+    /*
+    position: relative;
+    width: 90%;
+    max-width: 1024px;
+    min-width: 640px;
+    margin: auto;
+    */
+    background-color: #D0AB81;  /*#D9D9D9;*/
+}
+
+/* Messages flash !*/
+#bloc_flash_msg
+{
+    font-family: 'Times New Roman';
+    color: red;
+    font-size: 0.6em;    
+}
+
+/* login OLD_POSITIONNING 
+#main_login
+{
+    text-align: center;
+    width: 30%;
+    position: relative;
+    left: 70%;
+    top: -11em;
+}
+#login_and_nav
+{
+    display: inline-block;
+    vertical-align: top;
+    height: 10em;
+}
+*/
+
+#main_login
+{
+    position: absolute;
+    top: 0.6em;
+    right: 0.6em;
+    text-align: center;
+}    
+
+/* Mise en page des headers et footer du site */
+#site_header
+{
+    position: relative;
+}
+#site_header, #site_footer
+{
+    background-color: #856D52;        
+    color: #2E2E2E;
+}
+
+header h1, footer h1, nav
+{
+    font-family:Dayrom, serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* logo et Titre du site */
+#main_title
+{
+    display: inline-block;
+    width: 65%;
+}
+
+#logo
+{
+    display: inline-block;
+    opacity:0.8;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+    margin-left: 0.6em;
+    margin-right: 0.6em;
+    border-radius: 1em;
+}
+
+#site_title
+{
+    /*
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 1.5em;
+    width: 75%;
+    text-align: center;
+    */
+}
+
+#site_title h2
+{
+    font-style: italic;
+}
+
+
+/* Navigation + retrait des puces de la liste */
+#main_nav 
+{
+    position: absolute;
+    bottom: 0.6em;
+    right: 0.6em;
+    /*
+    background-color: #3D3D3D
+    border-radius: 1em;
+    */
+}
+
+#main_nav ul
+{
+    list-style-type: none;
+    position: relative;
+    margin: auto;
+}
+
+#main_nav li
+{
+    display: inline-block;
+}
+
+#main_nav a, #site_header a[href], #site_footer a[href]
+{
+    font-size: 1.3em;
+    color: #91C29B; /*#919E9E;*/
+    text-decoration: none; 
+}
+
+#main_nav a:hover, #site_header a[href]:hover, #site_footer a[href]:hover
+{
+    color: #B7D991; /*#D1D1D1;*/
+    border: 0.1em solid #B7D991; /*#D1D1D1;*/
+}
+
+/* Mise en page de la pagination */
+#bloc_projet_body 
+{
+    padding: 1.5em;    
+}
+
+#projets_pagination
+{
+    display: inline-block;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+#bloc_projet_footer ul
+{
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+    margin: auto;
+}
+
+#bloc_projet_footer ul li
+{
+    display: inline-block;
+    margin-left: 0.5em;
+    color: #262626;
+}
+
+#bloc_projet_footer a
+{
+    color: #262626;
+}
+
+#bloc_projet_footer a[href]:hover
+{
+    border: 1px solid;
+}
+
+/* Mise en page de l'index des projets */
+.article_projet
+{
+    border: 0.1em solid black;
+    border-radius: 1em;
+    margin: 1.5em;
+    padding-left : 1em;
+    padding-right: 1em;
+}
+
+/*
+.article_projet_header ul
+{
+    list-style-type: none;
+    position: relative;
+    margin: auto;
+}
+
+.article_projet_header ul li
+{
+    display: inline-block;
+    margin-left: 0.5em;
+}
+*/
+
+/* Mise en page du détail des projets */
+.detail_projet_header
+{
+    border: 0.1em solid black;
+    border-radius: 1em;
+    margin: 1.5em;
+    padding-left : 1em;
+    padding-right: 1em;
+}
+
+.detail_projet_liste_champs
+{
+    margin: 1.5em;
+    padding-left : 1em;
+    padding-right: 1em;
+}
+
+.detail_projet_article_champ
+{
+    border: 0.1em solid black;
+    border-radius: 1em;
+    margin: 1.5em;
+    padding-left : 1em;
+    padding-right: 1em;
+}
+
+.detail_projet_commentaires
+{
+    margin: 1.5em;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.detail_projet_article_commentaire,
+.detail_projet_article_champ_proposition
+{
+    margin: 1.5em;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.detail_projet_ajouter_champ
+{
+    margin: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.detail_projet_ajouter_champ .panel-body
+{
+    background-color: #856D52;
+}
+
+/* Mise en page Nouveau Projet */
+#liste_projets,
+#form_new_projet
+{
+    border: 0.1em solid black;
+    border-radius: 1em;
+    margin: 1.5em;
+    padding-left : 1em;
+    padding-right: 1em;
+}
+
+/* Page de présentation du formulaire d'ajout de projet */
+#liste_projets
+{
+    display: inline-block;
+    width: 25%;
+    margin-left: 0.6em;
+    font-size: small;
+}
+
+#form_new_projet
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 65%;
+}
+
+/* Mise en page Nouveau champ projet */
+#resume_projet,
+#form_new_champ
+{
+    border: 0.1em solid black;
+    border-radius: 1em;
+    margin: 1.5em;
+    padding-left : 1em;
+    padding-right: 1em;
+
+}
+
+/* Page de présentation du formulaire d'ajout de champs */
+#resume_projet
+{
+    display: inline-block;
+    width: 25%;
+    margin-left: 0.6em;
+    font-size: small;
+}
+
+#form_new_champ
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 65%;
+}
+
+/* Mise en page Nouvelle Proposition sur champ */
+#resume_champ,
+#form_new_proposition
+{
+    border: 0.1em solid black;
+    border-radius: 1em;
+    margin: 1.5em;
+    padding-left : 1em;
+    padding-right: 1em;
+}
+
+/* Page de présentation du formulaire d'ajout de projet */
+#resume_champ
+{
+    display: inline-block;
+    width: 25%;
+    margin-left: 0.6em;
+    font-size: small;
+}
+
+#form_new_proposition
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 65%;
+}
+
+/* Mise en page Nouveau commentaire sur projet */
+#rappel_projet,
+#form_new_commentaire_projet
+{
+    border: 0.1em solid black;
+    border-radius: 1em;
+    margin: 1.5em;
+    padding-left : 1em;
+    padding-right: 1em;
+}
+
+/* Page de présentation du formulaire d'ajout de projet */
+#rappel_projet
+{
+    display: inline-block;
+    width: 25%;
+    margin-left: 0.6em;
+    font-size: small;
+}
+
+#form_new_commentaire_projet
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 65%;
+}
+/* Mise en forme du formulaire d'ajout de champs au projet */
+
+.inlineform_label
+{
+    display: inline-block;
+    width: 25%;
+}
+
+.inlineform_champs
+{
+    display: inline-block;
+    width: 70%;
+}
+
+input[id*="_description"]
+{
+    width: 95%;
+}
+
+input[id*="_nom"]
+{
+    width: 35%;
+}
+
+/* Largeur des différents éléments du formulaire */
+#jp_jeunespoussesbundle_centier_valeur,
+#jp_jeunespoussesbundle_cpropositionentier_valeur
+{
+    width: 5em;
+}
+
+#jp_jeunespoussesbundle_cstring_valeur,
+#jp_jeunespoussesbundle_cpropositionstring_valeur
+{
+    width: 95%;
+}
+
+#jp_jeunespoussesbundle_ctext_valeur,
+#jp_jeunespoussesbundle_cpropositiontext_valeur,
+#jp_jeunespoussesbundle_cpropositionstring_commentaire,
+#jp_jeunespoussesbundle_cpropositionentier_commentaire,
+#jp_jeunespoussesbundle_jpproposition_oommentaire,
+#jp_jeunespoussesbundle_jpprojet_description,
+#form_description
+{
+    width: 95%;
+    height: 10em;
+}
+
+

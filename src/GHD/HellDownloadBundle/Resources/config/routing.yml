@@ -1,0 +1,3 @@
+ghd_hell_download_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: GHDHellDownloadBundle:HellDownload:index }

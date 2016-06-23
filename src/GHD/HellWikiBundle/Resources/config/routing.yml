@@ -1,0 +1,3 @@
+ghd_hell_wiki_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: GHDHellWikiBundle:HellWiki:index }

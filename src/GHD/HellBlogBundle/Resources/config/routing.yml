@@ -1,0 +1,7 @@
+ghd_hell_web_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: GHDHellBlogBundle:HellBlog:home }
+
+ghd_hell_blog_homepage:
+    path:     /blog/hello/{name}
+    defaults: { _controller: GHDHellBlogBundle:HellBlog:index }

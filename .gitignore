@@ -1,0 +1,6 @@
+app/cache
+app/config
+app/logs
+app/*.cache
+vendor
+web
